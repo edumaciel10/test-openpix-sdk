@@ -7,7 +7,7 @@ use OpenPix\PhpSdk\Client;
 
 // creates a new client instance
 
-$client = Client::create('Q2xpZW50X0lkX2IwNDdjM2NmLTBlNTItNDQyOC04N2IyLWEzOWMwZjk4NDBlNTpDbGllbnRfU2VjcmV0X2lodEhtSGtBaUFKMU5Hd3hhVHJnSnhtWHJOZ1VyZHV1aEhUd3pzUk1OSWs9');
+$client = Client::create($argv[1]);
 
 // generates a random uuid
 function generateUUID() {
