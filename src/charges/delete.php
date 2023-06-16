@@ -3,6 +3,6 @@
 /** @var \OpenPix\PhpSdk\Client $client */
 $client = require_once __DIR__ . "/../sdk/create-client.php";
 
-$result = $client->charges()->getOne("99469e5860384912927fa75bc976609a");
+$result = $client->charges()->delete("test-php-sdk-charge-f258aa9a-0edd-41af-bf13-b70e91370137");
 
 dumpCommentedVar($result, "result");
