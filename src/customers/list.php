@@ -9,7 +9,7 @@ $remainingCustomers = 10;
 
 foreach ($paginator as $result) {
     foreach ($result["customers"] as $customer) {
-        dumpArray($customer);
+        dumpData($customer);
 
         $remainingCustomers--;
 

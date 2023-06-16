@@ -44,7 +44,37 @@ function generateCPF() {
     return $cpf . $digit2;
 }
 
-function dumpArray($array)
+function varExport($data, $indentation = 0)
 {
-    echo json_encode($array, JSON_PRETTY_PRINT) . "\n";
+    $output = '';
+    $indentationSpaces = str_repeat(' ', $indentation);
+
+    if (is_array($data)) {
+        $output .= "[\n";
+
+        foreach ($data as $key => $value) {
+            $output .= $indentationSpaces . "    " . var_export($key, true) . " => ";
+
+            if (is_array($value)) {
+                $output .= varExport($value, $indentation + 4);
+            } else {
+                $output .= var_export($value, true);
+            }
+
+            $output .= ",\n";
+        }
+
+        $output .= $indentationSpaces . "]";
+    } else {
+        $output .= var_export($data, true);
+    }
+
+    $output = preg_replace("/'([^']+)'/", '"$1"', $output);
+
+    return $output;
+}
+
+function dumpData($data)
+{
+    echo varExport($data) . "\n";
 }

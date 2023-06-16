@@ -13,7 +13,7 @@ $customer = [
 $result = $client->customers()->create($customer);
 
 echo "Result:\n";
-echo json_encode($result, JSON_PRETTY_PRINT) . "\n";
+dumpData($result);
 
 echo "Request data:\n";
-echo json_encode($customer, JSON_PRETTY_PRINT) . "\n";
+dumpData($customer);
