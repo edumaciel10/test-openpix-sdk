@@ -53,7 +53,11 @@ function varExport($data, $indentation = 0)
         $output .= "[\n";
 
         foreach ($data as $key => $value) {
-            $output .= $indentationSpaces . "    " . var_export($key, true) . " => ";
+            $output .= $indentationSpaces . "    ";
+
+            if (!is_numeric($key)) {
+                $output .= var_export($key, true) . " => ";
+            }
 
             if (is_array($value)) {
                 $output .= varExport($value, $indentation + 4);
@@ -74,7 +78,22 @@ function varExport($data, $indentation = 0)
     return $output;
 }
 
+function addComments($data)
+{
+    return "/**\n * " . str_replace("\n", "\n * ", trim(strval($data))) . "\n */";
+}
+
 function dumpData($data)
 {
     echo varExport($data) . "\n";
+}
+
+function dumpCommentedData($data)
+{
+    echo addComments(varExport($data)) . "\n";
+}
+
+function dumpCommentedVar($data, $variable)
+{
+    echo addComments("\$" . $variable . " = " . varExport($data) . ";") . "\n";
 }

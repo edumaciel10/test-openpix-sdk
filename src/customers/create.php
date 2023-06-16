@@ -3,7 +3,7 @@
 $client = require_once __DIR__ . "/../sdk/create-client.php";
 
 $customer = [
-    "name" => "Dan",
+    "name" => "PHP SDK",
     "taxID" => generateCPF(),
     "email" => "email0@example.com",
     "phone" => "5511999999999",
