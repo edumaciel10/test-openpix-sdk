@@ -1,5 +1,6 @@
 <?php
 
+/** @var \OpenPix\PhpSdk\Client */
 $client = require_once __DIR__ . "/../sdk/create-client.php";
 
 $customer = [

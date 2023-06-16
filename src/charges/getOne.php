@@ -2,7 +2,6 @@
 
 $client = require_once __DIR__ . "/../sdk/create-client.php";
 
-$result = $client->customers()->getOne("test-php-sdk-8e7e3622-b209-46ef-b353-ec568e893177");
+$result = $client->charges()->getOne("99469e5860384912927fa75bc976609a");
 
-echo "Result:\n";
-dumpData($result);
+dumpCommentedVar($result, "result");
