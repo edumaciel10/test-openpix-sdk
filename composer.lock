@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cba0f24cd387ccd5895a7724b1cd964c",
+    "content-hash": "7f104dc93a079f18220723aad32550d8",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -333,16 +333,16 @@
         },
         {
             "name": "open-pix/php-sdk",
-            "version": "dev-main",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Open-Pix/php-sdk.git",
-                "reference": "6c5be4c29a2347588ccca15335fbb304eeebc2d6"
+                "reference": "02a2301c59be245072169d11c9a5151420bc276b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Open-Pix/php-sdk/zipball/6c5be4c29a2347588ccca15335fbb304eeebc2d6",
-                "reference": "6c5be4c29a2347588ccca15335fbb304eeebc2d6",
+                "url": "https://api.github.com/repos/Open-Pix/php-sdk/zipball/02a2301c59be245072169d11c9a5151420bc276b",
+                "reference": "02a2301c59be245072169d11c9a5151420bc276b",
                 "shasum": ""
             },
             "require": {
@@ -359,7 +359,6 @@
                 "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^9.6"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -373,22 +372,22 @@
             "description": "PHP OpenPix/Woovi SDK",
             "support": {
                 "issues": "https://github.com/Open-Pix/php-sdk/issues",
-                "source": "https://github.com/Open-Pix/php-sdk/tree/main"
+                "source": "https://github.com/Open-Pix/php-sdk/tree/v1.0.0"
             },
-            "time": "2023-06-15T17:54:08+00:00"
+            "time": "2023-06-19T17:07:42+00:00"
         },
         {
             "name": "php-http/discovery",
-            "version": "1.18.1",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/discovery.git",
-                "reference": "f258b3a1d16acb7b21f3b42d7a2494a733365237"
+                "reference": "1856a119a0b0ba8da8b5c33c080aa7af8fac25b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/discovery/zipball/f258b3a1d16acb7b21f3b42d7a2494a733365237",
-                "reference": "f258b3a1d16acb7b21f3b42d7a2494a733365237",
+                "url": "https://api.github.com/repos/php-http/discovery/zipball/1856a119a0b0ba8da8b5c33c080aa7af8fac25b4",
+                "reference": "1856a119a0b0ba8da8b5c33c080aa7af8fac25b4",
                 "shasum": ""
             },
             "require": {
@@ -451,9 +450,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/discovery/issues",
-                "source": "https://github.com/php-http/discovery/tree/1.18.1"
+                "source": "https://github.com/php-http/discovery/tree/1.19.0"
             },
-            "time": "2023-05-17T08:53:10+00:00"
+            "time": "2023-06-19T08:45:36+00:00"
         },
         {
             "name": "php-http/guzzle7-adapter",
@@ -1395,16 +1394,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.17.0",
+            "version": "v3.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "3f0ed862f22386c55a767461ef5083bddceeed79"
+                "reference": "b123395c9fa3a70801f816f13606c0f3a7ada8df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3f0ed862f22386c55a767461ef5083bddceeed79",
-                "reference": "3f0ed862f22386c55a767461ef5083bddceeed79",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/b123395c9fa3a70801f816f13606c0f3a7ada8df",
+                "reference": "b123395c9fa3a70801f816f13606c0f3a7ada8df",
                 "shasum": ""
             },
             "require": {
@@ -1479,7 +1478,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.17.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.18.0"
             },
             "funding": [
                 {
@@ -1487,7 +1486,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-05-22T19:59:32+00:00"
+            "time": "2023-06-18T22:25:45+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -1717,16 +1716,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.19",
+            "version": "1.10.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "af5a296ff02610c1bfb4ddfac9fd4a08657b9046"
+                "reference": "c4c8adb56313fbd59ff5a5f4a496bbed1a6b8803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/af5a296ff02610c1bfb4ddfac9fd4a08657b9046",
-                "reference": "af5a296ff02610c1bfb4ddfac9fd4a08657b9046",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c4c8adb56313fbd59ff5a5f4a496bbed1a6b8803",
+                "reference": "c4c8adb56313fbd59ff5a5f4a496bbed1a6b8803",
                 "shasum": ""
             },
             "require": {
@@ -1775,7 +1774,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-14T15:26:58+00:00"
+            "time": "2023-06-20T12:07:40+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4735,9 +4734,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "open-pix/php-sdk": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
